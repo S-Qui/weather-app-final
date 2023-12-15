@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+   <link href="styles/index.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">Weather Forcast in</a>
+        <form class="d-flex" id="search-form">
+        <input 
+        class="form-control me-2" 
+        type="search" 
+        placeholder="Country" 
+        aria-label="Search"
+        id="search-input">
+        <button class="submit-btn" type="submit">Search</button>
+        </form>
+    </div>
+    </nav>
+
+    <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/sky-background-video-conferencing_23-2148639325.avif" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+        <h1 class="card-title current-card"></h5>
+          <p class="current-date" id="current-date"></p>
+          <p class="card-text"> <span id="current-temp"></span>℃</p>
+          
+          <div class="weather-info-container">
+            <div class="weather-icon" id="icon">
+            </div>
+            <ul>
+              <li> 
+                Conditions: <span id="description"></span>
+              </li>
+              <li>
+                Humidity: <span id="humidity"></span>
+              </li>
+              <li>
+                Wind: <span id="wind-speed"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Monday</h5>
+          <i class="fa-solid fa-cloud-sun"></i>
+          <p class="card-text">26° <span class="fahrenheit">16°</span></p>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tuesday</h5>
+          <i class="fa-solid fa-cloud-showers-heavy"></i>
+          <p class="card-text">26° <span class="fahrenheit">16°</span></p>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Wednesday</h5>
+          <i class="fa-solid fa-cloud-sun"></i>
+          <p class="card-text">25° <span class="fahrenheit">16°</span></p>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Thursday</h5>
+          <i class="fa-solid fa-cloud-bolt"></i>
+          <p class="card-text">26° <span class="fahrenheit">16°</span> </p>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Friday</h5>
+          <i class="fa-solid fa-cloud-bolt"></i>
+          <p class="card-text">23° <span class="fahrenheit">16°</span></p>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Saturday</h5>
+          <i class="fa-solid fa-cloud-bolt"></i>
+          <p class="card-text">24° <span class="fahrenheit">16°</span></p>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="coder-name">
+        This project was coded by
+        <a href="https://www.shecodes.io/graduates/98039-stephanie-rafiki" target="_blank">Stephanie Rafiki</a> 
+        <a href="https://github.com/S-Qui/Weather-App-Draft" target="_blank">GitHub</a>
+        <a href="https://taupe-tarsier-9b7533.netlify.app" target="_blank">Netlify</a>
+    </p>
+  
+  </div>
+  <script src="javascript/index.js"></script>
+</body>
+</html>
