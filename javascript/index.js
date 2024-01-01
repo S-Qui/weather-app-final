@@ -7,16 +7,24 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `                
-          <div class="weather-forecast-cards col">
+          <div class="weather-forecast-cards col-sm-2">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="weather-forecast-date card-title">${formatDay(day.time)}</h5>
-                    <span class="weather-forecast-icon"><img src="${day.condition.icon_url}" class="weather-app-icon" /></span>
+                    <h5 class="weather-forecast-date card-title">${formatDay(
+                      day.time
+                    )}</h5>
+                    <span class="weather-forecast-icon"><img src="${
+                      day.condition.icon_url
+                    }" class="weather-app-icon" /></span>
                     <div class="weather-forecast-temperature">
                         <span class="weather-forecast-temperature-max">
-                            <strong>${Math.round(day.temperature.maximum)}°</strong>
+                            <strong>${Math.round(
+                              day.temperature.maximum
+                            )}°</strong>
                         </span>
-                        <span class="weather-forecast-temperature-min">${Math.round(day.temperature.minimum)}°</span>
+                        <span class="weather-forecast-temperature-min">${Math.round(
+                          day.temperature.minimum
+                        )}°</span>
                     </div>
                 </div>
             </div>
