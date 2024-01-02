@@ -4,6 +4,18 @@ body {
   background-size: cover;
 }
 
+.nav-title {
+  font-size: 46px;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+.nav-letter {
+  font-family: 'Satisfy', cursive;
+  font-size: 66px;
+}
+
+
 .submit-btn {
 	box-shadow: 0px 10px 14px -7px #276873;
 	background:linear-gradient(to bottom, #599bb3 5%, #fbc2eba9 100%);
@@ -37,7 +49,6 @@ body {
 .card-title {
   text-align: center;
   color: black;
-  font
 }
 
 .card {
@@ -55,6 +66,8 @@ body {
   box-shadow: 12px 12px 2px 1px #0000002d;
 }
 img {
+  display: flex;
+  width: auto;
   border-radius: 8px;
   filter: blur(8px);
   -webkit-filter: blur(8px);
@@ -63,7 +76,7 @@ img {
 .card-img-overlay {
   border-radius: 8px;
 }
-span {
+.weather-det {
   color: grey;
 }
 
@@ -123,6 +136,10 @@ li {
   list-style: none;
   text-align: center;
 }
+.current-style {
+  color: black;
+  font-size: 26px;
+}
 
 .weather-forecast-cards {
   display: flex;
@@ -158,4 +175,3 @@ li {
   display: block;
   text-align: center;
 }
-

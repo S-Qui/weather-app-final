@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 
@@ -15,7 +18,7 @@
   <div class="container">
     <nav class="navbar navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand">Weather Forcast in</a>
+        <a class="navbar-brand"> Weather Forecast in</a>
         <form class="d-flex" id="search-form">
         <input 
         class="form-control me-2" 
@@ -28,7 +31,7 @@
     </div>
     </nav>
 
-    <div class="card bg-dark text-white">
+    <div class="card">
       <img clas="card-img" src="images/sky-background-video-conferencing_23-2148639325.avif" alt="Card image">
       <div class="card-img-overlay">
 
@@ -37,17 +40,17 @@
           <p class="card-text"> <span id="current-temp"></span>℃</p>
             <ul>
               <li> 
-                Conditions: <span id="description"></span>
+                <span class="current-style">Conditions:</span> <span id="description"></span>
               </li>
               <li>
-                Humidity: <span id="humidity"></span>
+                <span class="current-style">Humidity:</span> <span id="humidity"></span>
               </li>
               <li>
-                Wind: <span id="wind-speed"></span>
+                <span class="current-style">Wind:</span> <span id="wind-speed"></span>
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4"> 
             <div class="weather-info-container">
             <div class="weather-icon" id="icon">
              </div>
